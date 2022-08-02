@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>Create Todo</h3>
+    <br>
+    <form action="" method="post" >
+         {% csrf_token %}
+         {{form.as_ul}}
+            <br>
+         <input type="submit" class="btn btn-info" value="create">
+    </form>
+
+{% endblock %}

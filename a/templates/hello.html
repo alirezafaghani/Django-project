@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+    {% block head %}
+        <style>
+            * {margin: 0; padding: 0; border: 0;}
+            #main
+            {
+                width: 800px;
+                height: 320px;
+                border: 1px solid black;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            ul li
+            {
+                transition: width 4s;
+                list-style: none;
+                float: left;
+                width: 160px;
+            }
+            ul:hover li { width: 40px;}
+            ul li:hover {width: 640px;}
+            #main ul {width: 1600px;}
+        </style>
+    {% endblock %}
+
+    {% block content %}
+        <div id="main">
+            <ul>
+               <li>
+                   <img src="11.jpg" alt="کریم 1" title="کریم 1">
+               </li>
+
+               <li>
+                   <img src="22.jpg" alt="کریم 2" title="کریم 2">
+               </li>
+
+               <li>
+                   <img src="33.jpg" alt="کریم 3" title="کریم 3">
+               </li>
+
+               <li>
+                   <img src="44.jpg" alt="کریم 4" title="کریم 4">
+               </li>
+
+               <li>
+                   <img src="55.jpg" alt="کریم 5" title="کریم 5">
+               </li>
+            </ul>
+        </div>
+    {% endblock %}
